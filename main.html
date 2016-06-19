@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Santhosh</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="header" ng-controller="mainCtrl">
+        <div class="clearfix">
+            <div class="logo">
+                <a href="index.html"><img src="images/Mylogo.png" id=logo alt="LOGO" height="52" width="340" style="{ background-color:#58614E}"></a>
+            </div>
+            <ul class="navigation" ng-init="selectedTab='home'">
+                <li ng-class="{'active':selectedTab === 'home'}" ng-click="selectedTab = 'home'">
+                    <a href="#/home">{{navigation.home}}</a>
+                </li>
+                <li ng-class="{'active':selectedTab === 'about'}" ng-click="selectedTab = 'about'">
+                    <a href="#/about">{{navigation.about}}</a>
+                </li>
+                <li ng-class="{'active':selectedTab === 'practices'}" ng-click="selectedTab = 'practices'">
+                    <a href="#/practices">{{navigation.practices}}</a>
+                </li>
+                <li ng-class="{'active':selectedTab === 'doctors'}" ng-click="selectedTab = 'doctors'">
+                    <a href="#/doctors">{{navigation.doctors}}</a>
+                </li>
+                <li ng-class="{'active':selectedTab === 'news'}" ng-click="selectedTab = 'news'">
+                    <a href="#/news">News</a>
+                    <div>
+                        <a href="#/singlepost">News Single Post</a>
+                    </div>
+                </li>
+                <li ng-class="{'active': selectedTab === 'contact'}" ng-click="selectedTab = 'contact'">
+                    <a href="#/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- HEADER -->
+
+    <ng-view></ng-view>
+
+
+
+
+
+    <!-- *******************      FOOTER   ***********************   -->
+
+    <div id="footer" ng-controller='footerController'>
+        <div class="clearfix">
+            <div class="section">
+                <h4>Latest News</h4>
+                <p>
+                    This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link.
+                </p>
+            </div>
+            <div class="section contact">
+                <h4>Contact Us</h4>
+                <p>
+                    <span>Address:</span> {{contact.address}}
+                </p>
+                <p>
+                    <span>Phone:</span> {{contact.phone}}
+                </p>
+                <p>
+                    <span>Email:</span> {{contact.email}}
+                </p>
+            </div>
+            <div class="section">
+                <h4>SEND US A MESSAGE</h4>
+                <p>
+                    If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+                </p>
+                <a href="http://www.facebook.com/misc/contact/" class="subscribe">Click to send us an email</a>
+            </div>
+        </div>
+        <div id="footnote">
+            <div class="clearfix">
+                <div class="connect">
+                    <a href="http://facebook.com/" class="facebook"></a>
+                    <a href="http://twitter.com/" class="twitter"></a>
+                    <a href="googleplus.com" class="googleplus"></a>
+                    <a href="http://pinterest.com" class="pinterest"></a>
+                </div>
+                <p>
+                    © Copyright 2023 Manes Winchester. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+
+
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>-->
+    <script src="public/lib/bower-angularjs/angular.min.js"></script>
+    <script src="public/lib/bower-angularjs/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller/mainController.js"></script>
+    <script src="js/controller/contactController.js"></script>
+    <script src="js/controller/doctorController.js"></script>
+    <script src="js/controller/newsController.js"></script>
+    <script src="js/Services/contactService.js"></script>
+    <script src="js/Services/doctorService.js"></script>
+    <script src="js/JsLibrary/tooltip.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+

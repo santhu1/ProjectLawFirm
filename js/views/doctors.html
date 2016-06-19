@@ -1,0 +1,74 @@
+<div id="contents">
+    <div class="clearfix">
+        <div class="sidebar">
+            <div>
+                <h2>Our doctors</h2>
+                <p>
+                    This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
+                </p>
+                <p>
+                    You can remove any link to our website from this website template, you're free to use this website template without linking back to us.
+                </p>
+                <p>
+                    If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+                </p>
+            </div>
+            <div>
+                <h2>Client Testimonials</h2>
+                <p>
+                    &ldquo;The best family doctors in the city so far. Me and my ex-wife didn’t have any
+                    <br> problems settling the terms and agreement. Everything went so smoothly. We’re both very happy.&ldquo; <span>- Jared Greene</span>
+                </p>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Our doctors</h1>
+            <div class="section">
+                <h2>Directors</h2>
+                <ul>
+                    <li ng-repeat=" doc in frame">
+                        <div class="frame4">
+                            <div class="box">
+                                <img src='{{doc.img}}' alt="Img" height="94" width="90">
+                            </div>
+                        </div>
+                        <p>
+                             <b>{{doc.name}}</b>{{doc.info}}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Senior Associates</h2>
+                <ul>
+                    <li>
+                        <div class="frame4">
+                            <div class="box">
+                                <img src="images/thumbnail-smile.jpg" alt="Img" height="94" width="90">
+                            </div>
+                        </div>
+                        <p>
+                            <b>George R. Montgomery</b> This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.You can remove any link to our website from this website template.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="section last-child">
+                <h2>Associates</h2>
+                <ul>
+                    <li ng-repeat="x in docAssit">
+                        <div class="frame4">
+                            <div class="box">
+                                <img src="{{x.img}}" alt="Img" height="94" width="90">
+                            </div>
+                        </div>
+                        <p>
+                            <b>{{x.name}}</b> {{x.info}}.
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

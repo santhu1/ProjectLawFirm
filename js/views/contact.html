@@ -1,0 +1,113 @@
+<div id="contents">
+    <div class="clearfix">
+        <div class="sidebar">
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="contact">
+                    <li>
+                        <p>
+                            <span class="home"></span> <em>Santhosh<br> </em> Brooklyn City, Newyork 1111
+                        </p>
+                    </li>
+                    <li>
+                        <p class="phone">
+                            Phone: (+201) 000 222 999
+                        </p>
+                    </li>
+                    <li>
+                        <p class="fax">
+                            Fax: (+202) 000 222 988
+                        </p>
+                    </li>
+                    <li>
+                        <p class="mail">
+                            Email: info@contactme.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Contact</h1>
+
+            <h3>Send Us a Quick Message</h3>
+
+            <p>
+                Fill the form to register
+            </p>
+
+            <form action="userForm" method="post" class="form-group">
+                <div class="form-group">
+                    <label>{{formField.firstName}}
+                    </label>
+                    <input type="text" value="" class="form-control" ng-model='firstName'
+                           uib-popover="{{toolTip.firstName}}" popover-trigger="mouseenter" required>
+                </div>
+
+                <div class="form-group">
+                    <label>{{formField.lastName}}
+                    </label>
+                    <input type="text" value="" class="form-control" ng-model='lastName'
+                           uib-popover="{{toolTip.lastName}}" popover-trigger="mouseenter" required>
+                </div>
+
+                <div class="form-group">
+                    <label>{{formField.phoneNo}}
+                    </label>
+                    <input type="text" value="" class="form-control" ng-model='phoneNumber'
+                           uib-popover="{{toolTip.phoneNo}}" popover-trigger="mouseenter" required>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                    <label>{{formField.email}}
+                    </label>
+                    <input type="email" name="email" value="" class="form-control" ng-model='email'
+                           uib-popover="{{toolTip.email}}" popover-trigger="mouseenter" required>
+
+                    <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-group">Date Of Birth</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt"
+                                   is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true"
+                                   close-text="Close" alt-input-formats="altInputFormats"/>
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="form-group">
+                        {{formField.message}}
+                    </label>
+                    <textarea class="form-control" uib-popover="{{toolTip.message}}" on-click="!mouseenter"
+                              popover-trigger="mouseenter"></textarea></div>
+                <button type="button" value="Send Message" ng-click="submit()" class="btn  btn-primary"
+                        ng-model='message'
+                        uib-popover='{{toolTip.submit}}' popover-trigger="mouseenter" ng-disable="userzForm.$invalid">
+                    {{formField.submit}}
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

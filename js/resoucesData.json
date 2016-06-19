@@ -1,0 +1,51 @@
+{
+  "info": {
+    "forms": [
+      {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phoneNo": " Phone Number",
+        "email": " Email Address",
+        "message": "Message",
+        "submit": "Submit"
+      }
+    ],
+    "toolTip": [
+      {
+        "firstName": "Enter your First name",
+        "lastName": "Enter your surname",
+        "phoneNo": "Enter your Phone Number",
+        "email": "Enter your Email Address",
+        "message": "Enter short description about yourself",
+        "submit": "Click me to Submit!"
+      }
+    ],
+    "doctors": [
+      {
+        "img": "images/thumbnail-sideview.jpg",
+        "name": "Pauline H. Wilson",
+        "info": "A physician or medical doctor is a professional who practices medicine, which is concerned with promoting, maintaining, or restoring human health through the study, diagnosis, and treatment of disease"
+      },
+      {
+        "img": "images/thumbnail-focus.jpg",
+        "name": "Kenneth E. Lunderberg",
+        "info": "A physician or medical doctor is a professional who practices medicine, which is concerned with promoting, maintaining, or restoring human health through the study, diagnosis, and treatment of disease"
+      }
+    ],
+    "associates":[
+      {
+        "img": "images/thumbnail-frontview.jpg",
+        "name": "Denise M. Silvia",
+        "info": " For the 50-plus years that medical dramas have been prominently featured in prime-time programming, we've looked forward to our weekly house calls with top doctors. Big names like the nurturing Marcus Welby, the precocious Doogie Howser, and the gorgeous Derek 'McDreamy' Shepherd easily come to mind, but don't forget about the rest of these notable fictional physicians."
+      },
+      {
+        "img": "images/thumbnail-happy.jpg",
+        "name": "Pauline H. Wilson",
+        "info": "English surgeon. Lister  pioneered the use of antiseptic (Carbolic acid) and antiseptic surgery which dramatically improved survival rates from major surgery."
+      }
+
+    ]
+
+
+  }
+}
